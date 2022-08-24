@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "lit-html": "^2.3.0",
+    "lite": "^4.0.5",
+    "page": "^1.11.6",
+    "server": "^1.0.37"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

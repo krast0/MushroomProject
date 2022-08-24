@@ -1,0 +1,320 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding: 30px 10%;
+background-color:#727171
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 1.3em;
+    
+}
+.nav-buttons{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid green;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color: black;
+    text-align:center;
+    transition: all 0.2s;
+
+}
+.nav-buttons:hover{
+    color: green;
+    border-color: green;
+}
+
+
+.post-image {
+    margin-top: 2em;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.all-posts,
+.my-posts {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 70px;
+    margin-top: 2em;    
+}
+
+.no-posts-title {
+    margin-top: 3em;
+}
+
+.post {
+    width: 350px;
+    height: 250px;
+    margin: 1em;
+    display: inline-block;
+    padding: 1em 3em;
+    background: linear-gradient(to right , #CEF576,#84FB95);
+    border: 2px solid blue;
+    border-radius: 30px;
+}
+
+
+.title{
+    text-align: center;
+    border: 3px solid green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+}
+.post-image {
+    width: 300px;
+    height: 200px;
+    border: 3px solid green;
+
+}
+.btn-wrapper a{
+    font-size: 1.6em;
+    border: 3px solid green;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    background-color: darkgreen;
+    padding: 4px;
+}
+
+/* DETAILS
+
+*/
+#details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    margin: 50px auto;
+    min-height: 400px;
+    max-width: 45%;
+    border: 2px ridge rgb(210, 208, 208);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+    background-size: 800px;
+    background-image: url(/images/—Pngtree—cute\ mushroom\ seamless\ pattern_7538096.png);
+    background-repeat: repeat-x;
+    background-position: 20px;
+  }
+#details-wrapper:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  
+  #img-wrapper {
+    max-width: 35%;
+  }
+  
+  #img-wrapper img {
+    width: 300px;
+    height: 350px;
+    display: block;
+    border-radius: 50%;
+  }
+  
+  #details-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+    width: 100%;
+  }
+  #details-poison{
+    color: red;
+  }
+  #details-poison-content{
+    color: black;
+  }
+  
+  #info-wrapper {
+    display: block;
+    width: 65%;
+    position: relative;
+  }
+  
+  #info-wrapper > p {
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  #info-wrapper > p > span {
+    font-weight: lighter;
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 19px;
+  }
+  
+  span {
+    font-size: 17px;
+  }
+  
+  #action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  #action-buttons a {
+    text-decoration: none;
+    margin: auto 50px;
+    font-size: 21px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: #818383;
+    border-radius: 10px;
+  }
+  
+/* SEARCH */
+#search-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24); */
+  }
+  
+  #search h3 {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 31px;
+    margin-bottom: 0px;
+  }
+  
+  #search h2 {
+    margin: 50px auto;
+  }
+  
+  #search-container .card-wrapper {
+    margin-top: 0px;
+    width: 97%;
+  }
+  
+  #search-container .card-wrapper p {
+    display: block;
+  }
+  
+  .search-wrapper {
+    width: 450px;
+    padding: 15px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset,
+      0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .search-wrapper input {
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px "lucida sans", "trebuchet MS", "Tahoma";
+    border: 0;
+    background: #eee;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+  }
+  
+  .search-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px "lucida sans", "trebuchet MS", "Tahoma";
+    color: #fff;
+    text-transform: uppercase;
+    background: #727171;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-wrapper button:hover {
+    background: #585858;
+  }
+  
+  .search-wrapper button:active,
+  .search-wrapper button:focus {
+    background: #8f8e8e;
+  }
+  
+  .search-wrapper button:before {
+    content: "";
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #706f6f transparent;
+    top: 12px;
+    left: -6px;
+  }
+  
+  .search-wrapper button:hover:before {
+    border-right-color: #696969;
+  }
+  
+  .search-wrapper button:focus:before {
+    border-right-color: #666565;
+  }
+  
+  .search-wrapper button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  
